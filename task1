@@ -1,0 +1,21 @@
+"""
+Task 1 – AI-Powered Code Completion
+Comparing manual vs AI-suggested code to sort a list of dictionaries.
+"""
+
+def sort_dicts_manual(data_list, key):
+    """Manual implementation using lambda key."""
+    return sorted(data_list, key=lambda x: x[key])
+
+def sort_dicts_ai(data_list, key):
+    """AI-suggested implementation with exception handling."""
+    try:
+        return sorted(data_list, key=lambda d: d.get(key, None))
+    except Exception as e:
+        print("Error sorting:", e)
+        return data_list
+
+if __name__ == "__main__":
+    data = [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 20}]
+    print("Manual:", sort_dicts_manual(data, "age"))
+    print("AI:", sort_dicts_ai(data, "age"))

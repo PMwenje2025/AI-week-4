@@ -1,0 +1,28 @@
+"""
+Task 2 – Automated Testing with Selenium
+Simulates valid and invalid login attempts.
+"""
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+
+driver.get("https://example.com/login")
+
+# Valid login
+driver.find_element(By.ID, "username").send_keys("testuser")
+driver.find_element(By.ID, "password").send_keys("correctpassword")
+driver.find_element(By.ID, "login-btn").click()
+assert "Welcome" in driver.page_source
+
+# Invalid login
+driver.get("https://example.com/login")
+driver.find_element(By.ID, "username").send_keys("testuser")
+driver.find_element(By.ID, "password").send_keys("wrongpassword")
+driver.find_element(By.ID, "login-btn").click()
+assert "Invalid credentials" in driver.page_source
+
+driver.quit()
