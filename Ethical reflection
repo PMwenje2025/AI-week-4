@@ -1,0 +1,7 @@
+When deploying the predictive model from Task 3 in a real-world company setting, it is critical to recognize that the dataset—and, consequently, the model—may reflect biases that affect its fairness and accuracy. The Breast Cancer dataset, while balanced in a biomedical context, can serve as an analogy for corporate data where certain teams, project types, or issue categories may be underrepresented.
+
+For example, if training data mostly includes issues from high-performing teams or well-documented projects, the model may learn to over-prioritize their cases and undervalue contributions from smaller, less-resourced teams. This results in systemic bias that perpetuates inequality in resource allocation and recognition.
+
+To mitigate such risks, fairness auditing tools like IBM AI Fairness 360 (AIF360) can be integrated into the machine learning pipeline. AIF360 provides algorithms and metrics to detect, quantify, and mitigate bias—such as disparate impact, statistical parity difference, or equal opportunity difference. Using these, developers can test whether predictions are equitably distributed across different groups and apply techniques like reweighting or adversarial debiasing to improve fairness.
+
+Embedding such fairness checks not only improves technical integrity but also upholds ethical principles of transparency, accountability, and inclusivity, aligning AI deployment with responsible innovation standards in modern software engineering.

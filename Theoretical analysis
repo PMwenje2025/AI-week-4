@@ -1,0 +1,23 @@
+Part 1: Theoretical Analysis (30%)
+Q1. How AI-Driven Code Generation Tools Reduce Development Time
+
+AI tools like GitHub Copilot speed up coding by suggesting context-aware code in real time. They complete functions, fix syntax, and reduce repetitive typing so developers focus on design and problem-solving.
+However, the generated code can be inaccurate or insecure, and it may not match project logic or standards. Developers must still review output to avoid errors, bias, or copyright issues.
+
+Q2. Supervised vs Unsupervised Learning in Bug Detection
+
+Supervised learning uses labeled data showing buggy and clean code to train models that predict new bugs. It works well when enough labeled data is available.
+Unsupervised learning uses unlabeled data to find unusual code or patterns that may indicate bugs. It is useful when labels are missing but may produce false alerts.
+In practice, combining both improves accuracy and coverage in automated bug detection.
+
+Q3. Why Bias Mitigation Matters in AI Personalization
+
+Bias mitigation ensures all users get fair and inclusive experiences. If training data underrepresents some groups, AI models can personalize features that favor others, creating unfair results.
+Mitigating bias improves trust, accessibility, and compliance, making AI-driven user experiences equitable for everyone.
+
+Case Study: AIOps in Software Deployment
+
+AIOps uses AI to improve deployment speed and reliability.
+It detects problems early by analyzing logs and performance data, allowing quick fixes or automatic rollbacks.
+It also predicts resource needs, optimizing servers and testing schedules for faster, more efficient releases.
+Overall, AIOps reduces downtime, speeds up delivery, and improves software quality.
